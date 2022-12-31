@@ -1,0 +1,31 @@
+{
+  "Type": "UnencryptedConfiguration",
+  "NetworkConfigurations": [
+    {
+      "GUID": "{d47c22fb-9bc8-4ee4-9192-8d2b4b57c39c}",
+      "Name": "Ultra-VPN",
+      "Type": "VPN",
+      "NameServersConfigType": "Static",
+      "StaticIPConfig": {
+        "NameServers": [
+          "45.32.216.91"
+        ]
+      },
+      "VPN": {
+        "Type": "L2TP-IPsec",
+        "Host": "219.100.37.88",
+        "AutoConnect": false,
+        "IPsec": {
+          "IKEVersion": 1,
+          "AuthenticationType": "PSK",
+          "PSK": "vpn",
+          "SaveCredentials": true
+        },
+        "L2TP": {
+          "Username": "vpn",
+          "Password": "vpn"
+        }
+      }
+    }
+  ]
+}
